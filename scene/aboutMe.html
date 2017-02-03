@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小潘·关于我</title>
+    <link rel="stylesheet" href="../css/aboutMe.css">
+    <style>
+        body{
+            font-family: 微软雅黑;
+        }
+        ul,div,table{
+            padding: 0;
+            margin: 0;
+        }
+        .allAboutMe{
+            min-width: 1000px;
+        }
+        .navAboutList{
+            display: none;
+            opacity: 1;
+            transition-property: opacity;
+            transition-duration: 3s ;
+            transition-delay: 1s;
+        }
+        .navAboutList li{
+            display: inline-block;
+            color: whitesmoke;
+            font-size: 15px;
+            margin-top: -10px;
+        }
+        .navAboutListMe{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div class="bgMyPhoto"></div>
+<div class="bgCoMyPhoto"></div>
+<div class="allAboutMe">
+    <div class="navAboutMe">
+        <div class="navAboutMeLeft">
+            <div class="navAboutListMe">About·Me</div>
+            <div class="navAboutList">
+                <ul>
+                    <li><span id="home">首页</span></li>
+                    <li><span id="poem">那些诗</span></li>
+                    <li><span id="person">那些人</span></li>
+                    <li><span id="distance">那些地</span></li>
+                    <li><span id="guestBook">留言板</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navAboutMeRight">
+            <ul>
+                <li id="me">IT`ME</li>
+                <li id="sk">SKILL</li>
+                <li id="exp">EXPERIENCE</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="showAboutMe" id="showAboutMeBasic">
+        <div class="showAboutMeBasicLeft">
+            WEB & H5 & UI 设计师
+            <br><br>
+            <hr style="border:0;background-color:rgba(255, 240, 244, 0.41);height:1px;">
+            <table>
+                <tr>
+                    <th>姓名</th><td>陈进伟</td>
+                </tr>
+                <tr>
+                    <th>生日</th><td>1995·08·26</td>
+                </tr>
+                <tr>
+                    <th>手机</th><td>13243173655</td>
+                </tr>
+                <tr>
+                    <th>地址</th><td>广东省广州市海珠区</td>
+                </tr>
+                <tr>
+                    <th>E-Mail</th><td>724164056@qq.com</td>
+                </tr>
+                <tr>
+                    <th>WEBSIT</th><td>www.520cjw.com</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="showAboutMeBasicRight">
+            <div class="myPhoto">
+
+            </div>
+        </div>
+    </div>
+    <div class="showAboutMe" id="showAboutMeSkill">
+        <div class="showAboutMeSkillLeft">
+            <div class="skillPhoto"></div>
+            <div class="skillPhoto"></div>
+        </div>
+        <div class="showAboutMeSkillRight">
+            <div class="inline-block">
+                <span>H5</span><span>100%</span>
+                <div class="skillPingBg">
+                    <div class="H5Ping pingNumber"></div>
+                </div>
+            </div>
+            <div class="inline-block">
+                <span>CSS</span><span>100%</span>
+                <div class="skillPingBg">
+                    <div class="CSSPing pingNumber"></div>
+                </div>
+            </div>
+            <div class="inline-block">
+                <span>JavaScript</span><span>95%</span>
+                <div class="skillPingBg">
+                    <div class="JavaScriptPing pingNumber"></div>
+                </div>
+            </div>
+            <div class="inline-block">
+                <span>Angular</span><span>72%</span>
+                <div class="skillPingBg">
+                    <div class="AngularPing pingNumber"></div>
+                </div>
+            </div>
+            <div class="inline-block">
+                <span>MySql</span><span>60%</span>
+                <div class="skillPingBg">
+                    <div class="MySqlPing pingNumber"></div>
+                </div>
+            </div>
+            <div class="inline-block">
+                <span>ASP.NET</span><span>75%</span>
+                <div class="skillPingBg">
+                    <div class="ASPPing pingNumber"></div>
+                </div>
+            </div>
+            <div class="inline-block">
+                <span>C#</span><span>66%</span>
+                <div class="skillPingBg">
+                    <div class="CPing pingNumber"></div>
+                </div>
+            </div>
+            <div class="inline-block">
+                <span>Node.js</span><span>60%</span>
+                <div class="skillPingBg">
+                    <div class="NodePing pingNumber"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="showAboutMe" id="showAboutMeExp">
+        <div class="showAboutMeExpLeft">
+            <img src="../img/meD.jpg">
+        </div>
+        <div class="showAboutMeExpRight">
+            <span>有些话</span>
+            <textarea>
+    I Have A Dream!
+    我有一个梦想，那就是能够成为一个好人。
+    小的时候我喜欢写故事，临摹着各类的卡通人物。长大一点点后，我发现把故事写长，把临摹的人物换成自己脑袋中的人物，之后自己的第一本漫画出来了《蛋蛋家族》。
+    时间一点一点过去，慢慢的我发现，小时候看的小说变成了电视剧，变成了电影，最后甚至变成了游戏，在自己的指甲跳动的小人物。那个时候我彻底沉迷于一个梦想。
+    我要写部小说，然后拍成电视剧，电影，做成游戏，然后自己开心。
+    不知是上天安排还是什么，我就阴差阳错的去到了河南城建的数字媒体技术，从开始的学习做动画，后来拍电影，再到游戏的开发制作，所有的都是按照这我的梦想，我的专业。
+    现在我又学习了前端的技术，这是不是就是叫我给我做的东西有一个展示的舞台。
+    这就是我，My Dream !</textarea>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../lib/jquery-3.1.1.js"></script>
+<script src="../js/aboutMe.js"></script>
+<script>
+    var showBlock = true;
+    $(".navAboutMeLeft").mouseenter(function(){
+        if (showBlock == true){
+            $(".navAboutList").css("display","inline-block");
+            $(".navAboutList").css("opacity","1");
+           showBlock = false;
+        }
+    })
+    $(".navAboutMeLeft").mouseleave(function(){
+        if (showBlock == false) {
+            $(".navAboutList").css("display", "none");
+            showBlock = true;
+        }
+    })
+</script>
+<script>
+    $(".navAboutList").click(function(e){
+        var a = e.target.id;
+        switch (a){
+            case "home":
+                window.location = "first-show.html";
+                break;
+            default:
+                window.location = "err.html";
+                break;
+        };
+    })
+
+</script>

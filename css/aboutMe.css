@@ -1,0 +1,220 @@
+/*------------------------------------------------------个人信息*/
+.showAboutMeBasicLeft{
+    width: 40%;
+    float: left;
+    /*background: #ffbb85;*/
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 16px;
+    color: whitesmoke;
+}
+.showAboutMeBasicLeft table{
+    text-align: left;
+}
+td{
+    padding: 10px 40px;
+}
+.showAboutMeBasicRight{
+    float: right;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+.myPhoto{
+    height: 270px;
+    width: 270px;
+    background-image: url(../img/meS.jpg);
+    background-size: cover;
+}
+.bgMyPhoto{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-image:url("../img/meY.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    -webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover;/* 兼容Opera */
+    zoom: 1;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+.bgCoMyPhoto{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(1,1,1,0.5);
+}
+/*-----------------------------------------------------------------开头导航*/
+.navAboutMe{
+    min-width: 800px;
+    position: absolute;
+    margin: 30px 8%;
+    width: 84%;
+    height: 80px;
+    color: #f6f6f6;
+    /*background: #272727;*/
+}
+.navAboutMeRight{
+    float: right;
+    margin-top: 15px;
+}
+.navAboutMeRight li:nth-child(1){
+    color: #8fd059;
+}
+.navAboutMeLeft{
+    float: left;
+    font-size: 80px;
+    line-height: 60px;
+}
+.navAboutMeRight li{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 13px ;
+}
+.navAboutMeRight{
+    line-height: 80px;
+}
+.clear{
+    clear: both;
+}
+/*---------------------------------------------内容展示黑框*/
+.showAboutMe{
+    min-width: 800px;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 8%;
+    width: 84%;
+    height: 460px;
+    background: rgba(1,1,1,0.6);
+}
+
+#showAboutMeBasic{
+    display: block;
+}
+#showAboutMeSkill{
+    display: none;
+    background: rgba(32, 47, 55, 0.45);
+}
+#showAboutMeExp{
+    display: none;
+    background: rgba(143, 168, 170, 0.48);
+}
+/*--------------------------------------------技能头像*/
+.skillPhoto{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius:50%;
+    background: lightyellow;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px #f5f3d0 solid;
+}
+.showAboutMeSkillLeft{
+    float: left;
+    margin-left: 8%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    color: #c1c1c1;
+}
+/*------------------------------------------------------技能条*/
+.showAboutMeSkillRight{
+position: relative;
+    margin-top: 5%;
+    margin-right: 10%;
+    font-size: 17px;
+    color: whitesmoke;
+}
+.showAboutMeSkillRight span{
+    margin-right: 20px;
+}
+.skillPingBg{
+    width: 300px;
+    height: 10px;
+    background: honeydew;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.inline-block{
+    display: inline-block;
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.pingNumber{
+    height: 100%;
+    background: yellow;
+}
+.H5Ping{
+    width: 100%;
+}
+.CSSPing{
+    width: 100%;
+}
+.JavaScriptPing{
+    width: 95%;
+}
+.AngularPing{
+    width: 72%;
+}
+.NodePing{
+    width: 60%;
+}
+.CPing{
+    width: 66%;
+}
+.ASPPing{
+    width: 75%;
+}
+.MySqlPing{
+    width: 60%;
+}
+/*---------------------------------------------我的经历*/
+.showAboutMeExpLeft{
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:40%;
+    overflow: hidden;
+}
+.showAboutMeExpLeft img{
+    transform-origin:0 0;
+    transform: scale(0.5);
+    filter: blur(5px);
+}
+.showAboutMeExpRight{
+    height: 100%;
+    width: 63%;
+}
+.showAboutMeExpRight span{
+    position: absolute;
+    font-size: 24px;
+    color: whitesmoke;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.showAboutMeExpRight textarea{
+    box-sizing: border-box;
+    height: 60%;
+    width: 100%;
+    margin-top: 16%;
+    padding-left: 60px;
+    padding-right: 80px;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 15px;
+    letter-spacing: 3px;
+    line-height: 20px;
+}
