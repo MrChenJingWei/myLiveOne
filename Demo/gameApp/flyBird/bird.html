@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Bird</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        #main {
+            position: relative;
+            height: 453px;
+            width: 800px;
+            /*background-color: aqua;*/
+            margin-left: 50px;
+            margin-top: 50px;
+            overflow: hidden;
+            background-image: url("image/bg.jpg");
+        }
+
+        #bird {
+            position: absolute;
+            top: 70px;
+            left: 150px;
+            height: 30px;
+            width: 40px;
+            background-image: url(image/bird1.png);
+            animation-name: birdFly;
+            animation-duration: 0.3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /*background-color: wheat;*/
+        }
+
+        @keyframes birdFly {
+            20% {
+                background-image: url(image/bird1.png)
+            }
+            40% {
+                background-image: url(image/bird3.png)
+            }
+            60% {
+                background-image: url(image/bird2.png)
+            }
+            80% {
+                background-image: url(image/bird3.png)
+            }
+            100% {
+                background-image: url(image/bird1.png)
+            }
+        }
+
+        #oneBg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 453px;
+            width: 800px;
+            background-image: url("image/back.png");
+            /*background-color: sienna;*/
+        }
+
+        #twoBg {
+            position: absolute;
+            top: 0;
+            left: 800px;
+            height: 453px;
+            width: 800px;
+            background-image: url("image/back.png");
+            /*background-color: cadetblue;*/
+        }
+
+        .pipe {
+            position: absolute;
+        }
+
+        #oneBg .pipe:nth-child(1) {
+            left: 0;
+        }
+
+        #oneBg .pipe:nth-child(2) {
+            left: 0
+        }
+
+        #oneBg .pipe:nth-child(3) {
+
+            left: 25%;
+        }
+
+        #oneBg .pipe:nth-child(4) {
+
+            left: 25%;
+        }
+
+        #oneBg .pipe:nth-child(5) {
+
+            left: 50%;
+        }
+
+        #oneBg .pipe:nth-child(6) {
+
+            left: 50%;
+        }
+
+        #oneBg .pipe:nth-child(7) {
+
+            left: 75%;
+        }
+
+        #oneBg .pipe:nth-child(8) {
+
+            left: 75%;
+        }
+
+        #twoBg .pipe:nth-child(1) {
+            left: 0;
+        }
+
+        #twoBg .pipe:nth-child(2) {
+            left: 0
+        }
+
+        #twoBg .pipe:nth-child(3) {
+
+            left: 25%;
+        }
+
+        #twoBg .pipe:nth-child(4) {
+
+            left: 25%;
+        }
+
+        #twoBg .pipe:nth-child(5) {
+
+            left: 50%;
+        }
+
+        #twoBg .pipe:nth-child(6) {
+
+            left: 50%;
+        }
+
+        #twoBg .pipe:nth-child(7) {
+
+            left: 75%;
+        }
+
+        #twoBg .pipe:nth-child(8) {
+
+            left: 75%;
+        }
+
+        #play {
+            height: 453px;
+            width: 800px;
+            /*background-color: gainsboro;*/
+            background-image: url(image/menu.png);
+            background-repeat: no-repeat;
+            background-position: 230px;
+            z-index: 10000;
+        }
+
+        #play img {
+            position: absolute;
+            top: 323px;
+            left: 262px;
+        }
+
+        #end {
+            position: absolute;
+            height: 200px;
+            width: 300px;
+            left: 250px;
+            top: 135px;
+            border-radius: 10px;
+            background: wheat;
+            /*font-size: 30px;*/
+            display: none;
+        }
+
+        #end h1 {
+            line-height: 100px;
+            text-align: center;
+        }
+
+        #endBtn {
+            position: absolute;
+            border: none;
+            height: 40px;
+            width: 130px;
+            background-color: beige;
+            border-radius: 10px;
+            top: 90px;
+            left: 85px;
+            outline: none;
+        }
+
+        #endOutput {
+            position: absolute;
+            height: 40px;
+            width: 130px;
+            top: 140px;
+            left: 115px;
+        }
+
+        #endOutput input {
+            background: none;
+            border: none;
+            font-size: 15px;
+            height: 40px;
+            width: 50px;
+            text-align: center;
+            outline: none;
+            pointer-events: none;
+        }
+        #birdInput{
+            position: absolute;
+            top:0;
+            left: 0;
+            /*display: none;*/
+
+        }
+        #inInput{
+            background: rgba(50,132,140,0.5);
+            border: none;
+            border-radius: 4px;
+            height: 30px;
+            width: 40px;
+            position: absolute;
+            top:0;
+            left:40px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!--背景面板-->
+<div id="main">
+    <!--第一背景-->
+    <div id="oneBg"></div>
+    <!--第二背景-->
+    <div id="twoBg"></div>
+    <!--计分栏-->
+    <div id="birdInput"><label>得分:</label><input id="inInput" type="text" value=""></div>
+    <!--鸟-->
+    <div id="bird"></div>
+    <!--开始界面-->
+    <div id="play"><img src="image/start.png" alt=""></div>
+    <!--结束界面-->
+    <div id="end">
+        <h1>GAME OVER</h1>
+        <button id="endBtn">NEW&nbsp;&nbsp;GAME</button>
+        <div id="endOutput"><label>得分:</label><input id="outInput" type="text" value=""></div>
+    </div>
+</div>
+
+
+</body>
+<script type="text/javascript" src="bird.js"></script>
+</html>

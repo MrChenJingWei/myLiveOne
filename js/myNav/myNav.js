@@ -17,8 +17,6 @@ function navShow() {
     })
 }
 navShow();
-
-
 //名言
 function knowShow() {
 
@@ -54,6 +52,119 @@ $('.navHeadPosition').click(function(e){
     console.log(a);
     switch (a){
         case "me":window.location="aboutMe.html";
+            break;
+        default:
+            window.location = "err.html";
+            break;
     }
 })
+//加载demo路径
+function loadDemo() {
+    var demoList = [
+        {
+            url: "btTime/变态计时器.html",
+            title: "dhApp",
+            name:"变态计时器",
+            style:"炫彩展示"
+        },
+        {
+            url: "copiBoot/切图.html",
+            title: "dhApp",
+            name:"简约UI",
+            style:"炫彩展示"
+        },
+        {
+            url: "jl/work/form.html",
+            title: "dhApp",
+            name:"时尚简历",
+            style:"炫彩展示"
+        },
+        {
+            url: "photoShow/电影海报浏览.html",
+            title: "dhApp",
+            name:"电影海报浏览",
+            style:"炫彩展示"
+        },
+        {
+            url: "photoWall/照片墙.html",
+            title: "dhApp",
+            name:"照片墙",
+            style:"炫彩展示"
+        },
+        {
+            url: "qixi/七夕.html",
+            title: "dhApp",
+            name:"七夕动画",
+            style:"炫彩展示"
+        },
+        {
+            url: "tree/Tree.html",
+            title: "dhApp",
+            name:"求爱树",
+            style:"炫彩展示"
+        },
+        {
+            url: "柱状、饼图.html",
+            title: "dhApp",
+            name:"Canvas 简单运用",
+            style:"炫彩展示"
+        },
+        {
+            url: "flyBird/bird.html",
+            title: "gameApp",
+            name:"飞翔的小鸟",
+            style:"H5小游戏"
+        },
+        {
+            url: "剪刀石头布2.0.html",
+            title: "gameApp",
+            name:"剪刀石头布",
+            style:"H5小游戏"
+        },
+        {
+            url: "mucApp/work/Music Player.html",
+            title: "syApp",
+            name:"H5音乐播放器",
+            style:"H5小应用"
+        },
+        {
+            url: "软键盘2.0/软键盘1.0.html",
+            title: "syApp",
+            name:"软键盘",
+            style:"H5小应用"
+        },
+        {
+            url: "体重.html",
+            title: "syApp",
+            name:"体重指标",
+            style:"H5小应用"
+        },
+        {
+            url: "注册.html",
+            title: "syApp",
+            name:"C登录注册",
+            style:"H5小应用"
+        }
+    ]
+    var demoHtml = document.createElement("div");
+    var innerDemoHtml = "";
+    for (var i=0; i < demoList.length; i++) {
+        console.log(i);
+        console.log(demoList[i]);
+        var url = demoList[i]['url'];
+        var title = demoList[i]['title'];
+        var name = demoList[i]['name'];
+        var style = demoList[i]['style']
+        demoHtml = "<div class='demoNameListStyle demoNameListPosition'>"
+            + "<img class='demoFaceStyle' src='../img/demoimg/"+(i+1)+".png'>"
+            + "<a href='../Demo/"+title+"/"+url+"' class='demoNameStyle'>"+name+"</a><br>"
+            + "<span class='demoTitleStyle'>"+style+"</span>"
+            + "</div>";
+        innerDemoHtml += demoHtml;
+        console.log(demoHtml);
+    }
+    document.getElementById('demoListShow').innerHTML = innerDemoHtml;
+}
+window.onload = function(){loadDemo()};
+
 

@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title>体重</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	#main{width: 800;margin: 50px auto;}
+	#left{float: left;;width: 400px;}
+	#right{float: right;}
+	.rule{width: 300px;height: 40px;margin: 0 auto;}
+	table tr th{
+		color: white;
+		background-color: rgb(106,165,231);
+		padding: 10px;
+	}
+	#tab {
+		width: 800px;
+		margin: 10px auto;
+
+	}
+	h3{display: inline-block;
+		position: relative;
+		left: 20px;top: -7px}
+
+
+	</style>
+	<script type="text/javascript">
+
+function del(obj){
+	obj.parentElement.parentElement.remove();
+}
+
+		function submit(){
+		// 计算bmi的值
+		    var count=0;
+			var height=Number(document.getElementById('height').value)/100;
+			var width=Number(document.getElementById('width').value);
+			var bmi=width/(height*height);
+			var out;
+			if (bmi<=18.4) {
+				out="偏瘦";
+			}else if (bmi>18.5&&bmi<23.9) {
+				out="正常";
+			}else if (bmi>24.0&&bmi<27.9) {
+				out="过重";
+			}else{out="肥胖";}
+		// 添加记录
+		var tr=document.createElement('tr');
+		var trhtml;
+		count++;
+		trhtml="<td>"+count+"</td>";
+		trhtml+="<td>2016-07-15</td>";
+		trhtml+="<td>"+height+"</td>";
+		trhtml+="<td>"+width+"</td>";
+		trhtml+="<td>"+bmi.toFixed(2)+"</td>";
+		trhtml+="<td>"+out+"</td>";
+		trhtml+="<td><input type='button' value='删除' onclick='del(this)'></td>";
+		tr.innerHTML=trhtml;
+		var tb =document.getElementById("tab");
+		tb.appendChild(tr);
+
+
+
+			
+		}
+
+
+	</script>
+</head>
+<body>
+	<div id="main">
+		<div id="left" style="margin-top:30px">
+			<label>我的身高：</label>
+			<input id="height"type="text" value=""/>cm
+			<br><br>
+			<label>我的体重：</label>
+			<input id="width"type="text" value=""/>kg
+			<br><br>
+			<input type="button" onclick="submit()" value="计算BMI">
+		</div>
+		<div id="right" style="margin-top:-50px">
+			<h3>BMI中国标准</h3>
+			<div class="rule" style="background:rgb(125,207,246)">
+				<h3>分类</h3><h3 style="left:100px">BIM范围</h3>
+			</div>
+			<div class="rule" style="background:rgb(193,193,193	)">
+				<h3>偏瘦</h3><h3 style="left:100px"><=18.4</h3>
+			</div>
+			<div class="rule" style="background:rgb(88,198,5)">
+				<h3>正常</h3><h3 style="left:100px">18.5~23.9</h3>
+			</div>
+			<div class="rule" style="background:rgb(255,255,11)">
+				<h3>过重</h3><h3 style="left:100px">24.0~27.9</h3>
+			</div>
+			<div class="rule" style="background:rgb(253,134,8)">
+				<h3>肥胖</h3><h3 style="left:100px">>=28.0</h3>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+		<table id ="tab">
+			<tr>
+				<th>#</th>
+				<th>日期</th>
+				<th>身高</th>
+				<th>体重</th>
+				<th>BMI</th>
+				<th>鉴定结果</th>
+				<th>操作</th>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

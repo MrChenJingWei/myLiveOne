@@ -1,0 +1,157 @@
+<html>
+<head>
+	<title>变态计时器</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	#beijing{
+		/*background-image: url(dong.gif);*/
+		background-repeat: no-repeat;
+		height: 600px;
+		width: 800px;
+		margin: 50px auto;
+	}
+	#main{
+		height: 300px;
+		width: 600px;
+		background-color:#FFE4B5;
+		position: relative;
+		top: 60px;
+		left: 10px;
+		border: 90px solid #FFDAB9;
+		border-radius: 130px ;
+		background-image: url(fen.jpg);
+		background-size: 600px 300px;
+		background-repeat: no-repeat; 
+	}
+	#jishiqi{
+		text-align: center;
+		position: relative;
+		top: 20px 
+	}
+	#jishiqi div{
+		display: inline-block;
+		padding: 20px
+	}
+	#anniu div{
+		display: inline-block;
+		padding: 20px
+	}
+	#jishiqi input{
+		height: 200px;
+		width: 120px;
+		border: 5px solid #FFDAB9;
+		border-radius: 5px;
+		font-size:50px;
+		text-align: center;
+		color: #CD853F
+	}
+	#anniu {
+		text-align: center;
+		position: relative;
+		top: 10px
+	}
+	#anniu input{
+		height: 20px;
+		width: 45px;
+		border: none;
+		background-color:#FFDAB9;
+		color: white;
+		font-size: 8px
+	}
+
+
+	</style>
+	<script type="text/javascript">
+	var mytime;
+	var miao=0;
+	var fen=0;
+	var shi=0;
+	var youtime;
+	function time () {
+		var date = new Date();
+		hour.value=date.getHours();
+		min.value=date.getMinutes();
+		second.value=date.getSeconds();
+		mytime=setTimeout("time()",1000);
+	}
+	function stop(){
+		clearTimeout(mytime);
+	}
+	function timer(){
+
+		// second.value=miao%60;
+		// min.value=Math.floor(miao/60);
+		// hour.value=Math.floor(miao/3600);
+		// miao=miao+1;
+		// youtime=setTimeout("timer()",1000);
+		// second.value=miao%1000;
+		// min.value=partInt(miao/1000)%60;
+		// hour.value=partInt(miao/60000)%60;
+		// miao=miao+1;
+		// youtime=setInterval("timer()",1);
+
+	}
+	function timers(){
+		clearTimeout(youtime);
+	}
+	function stopp(){
+			history.go(0);
+			}
+	var b1;
+	function game(){
+		var jin;
+		jin=Math.ceil(Math.random()*4);
+		switch (jin){
+			// var picO;
+				case 1:
+				document.getElementById('main').style.background="url(dong.gif) no-repeat "
+				break;
+				case 2:
+				document.getElementById('main').style.background="url(fen.jpg) no-repeat "
+				break;
+				case 3:
+				document.getElementById('main').style.background="url(4.jpg) no-repeat"
+				break;
+				case 4:
+				document.getElementById('main').style.background="url(2.jpg) no-repeat "
+				break;
+			}
+			b1=setTimeout("game()",5000);
+		}
+		function games(){
+			clearTimeout(b1);
+			}
+
+
+
+	</script>
+</head>
+<body>
+	<div  id="beijing">
+		<div id="main">
+			<div id="jishiqi">
+				<div><input id="hour" type="text" value="">:</div>
+				<div><input id="min" type="text" value="">:</div>
+				<div><input id="second" type="text" value=""></div>
+			</div>
+			<div id="anniu">
+				<div>
+					<input type="button" value="时钟O" onclick="time()"style="margin-right:3px" >
+					<input type="button" value="时钟P" onclick="stop()" style="margin-left:3px">
+	<!-- 				<input type="button" value="Stop" onclick="stopp()" style="margin-left:3px"> -->
+				</div>
+				<div>
+					<input type="button" value="计时O" onclick="timer()"style="margin-right:3px">
+					<input type="button" value="计时P" onclick="timers()" onclick="timersb()"style="margin-left:3px">
+					<input type="button" value="Stop" onclick="stopp()" style="margin-left:3px">
+				</div>
+				<div>
+					<input type="button" value="壁纸O" onclick="game()" style="margin-right:3px">
+					<input type="button" value="壁纸P" onclick="games()" style="margin-left:3px">
+	<!-- 				<input type="button" value="Stop" onclick="stopp()" style="margin-left:3px"> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

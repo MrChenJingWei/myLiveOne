@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>电影海报集合</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	#main{
+		margin: 50px auto;
+		height: 700px;
+		width: 600px;
+/*		background-color: pink*/
+	}
+	.anniu input{border:none;background-color: white}
+	a{text-decoration: none;color: black;position: relative;left: 350px;font-size: 10px}
+	a:hover{background-color: gray}
+	#imgDiv img,h6{margin-left: 20px;margin-top:10px;text-align: center;}
+	.pic{display: inline-block;}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<h2>哆啦A梦：新·大雄的日本诞生 ドラえもん 新・のび太の日本誕生的剧照</h2>
+		<div>
+			<div class="anniu">
+			<span style="cursor:pointer;font-size:10px" onclick="tui()">按推荐排序</span>·
+			<span style="cursor:pointer;font-size:10px"  onclick="ci()">按名字排序</span>
+			<a href="../电影海报浏览.html">浏览模式</a>
+			</div>
+		</div>
+		<hr>
+		<div id="imgDiv"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	"use strict";
+	// 严令模式
+	// 定义一个全局的图片数组
+	var haibao=new Array();
+	function persion(tu,zi) {
+		this.tu=tu;
+		this.zi=zi;
+	}
+	    haibao.push(new persion('1.jpg','愤怒拔刀的哆啦a梦'));
+	    haibao.push(new persion('2.jpg','哆啦a梦带领大家在穿... '));
+	    haibao.push(new persion('3.jpg','大雄与三萌宠'));
+	    haibao.push(new persion('4.jpg','哆啦a梦和大雄展示任...'));
+	    haibao.push(new persion('5.jpg','欢呼雀跃的众人'));
+	    haibao.push(new persion('6.jpg','大雄与母亲对峙'));
+	    haibao.push(new persion('7.jpg','哆啦a梦陪伴大雄学习'));
+	    haibao.push(new persion('8.jpg','古古儿安慰大雄'));
+	    haibao.push(new persion('9.jpg','哭泣的哆啦a梦'));
+	    haibao.push(new persion('10.jpg','众人穿越森林变雪球'));
+	    haibao.push(new persion('11.jpg','准备战斗的众人'));
+	    haibao.push(new persion('12.jpg','众人送原始人回家'));
+	    haibao.push(new persion('13.jpg','大雄站在窗外看着哆啦...'));
+	    haibao.push(new persion('14.jpg','哆啦a梦和大雄、胖虎...'));
+	    haibao.push(new persion('15.jpg','哆啦尊比受到原始人的...'));
+	    haibao.push(new persion('16.jpg','古古儿和家人的迁徙之...'));
+	    haibao.push(new persion('17.jpg','和萌宠一起安睡的大雄 '));
+	    haibao.push(new persion('18.jpg','巨尊比手劈高科技石枪'));
+	    haibao.push(new persion('19.jpg','骑在萌宠上战斗的众人'));
+	    haibao.push(new persion('20.jpg','众人一起野餐'));
+	var imgAdd="";
+	// 初始化界面
+	for (var i =0;haibao.length> i; i++) {
+		var imgL=document.getElementById('imgDiv');
+		// console.log(i);
+		var imgi=haibao[i].tu;
+		var text=haibao[i].zi;
+		// console.log(imgi);
+		imgAdd+="<div class='pic'>"+"<img src='"+imgi+"'/>"+"<h6>"+text+"</h6>"+"<input id="+"'"+imgi+"'"+" type='button' value='删除' onclick='Dlet(this)' style='position:relative;top:-140px;left:150px;color:white;border:none;border-radius:4px;'>"+"</div>";
+		// console.log(imgAdd);
+		imgL.innerHTML=imgAdd;
+		// console.log(imgL.innerHTML);
+	}
+	
+		// var clearA=document.getElementById('imgDiv')
+		// imgL.innerHTML="";
+		// document.getElementById('imgDiv').innerHTML='';
+	// 清除初始div内容 
+	function dle() {
+		var trs=document.getElementById("imgDiv").getElementsByTagName("div");
+		var len=trs.length;
+		for(var i=0;i<len;i++){
+			trs[0].remove();
+		}
+	}
+	// 删除节点
+	function Dlet (obj){
+		// var Idd=id;
+		// var mine=document.getElementById('Idd');
+		// console.log(mine);
+		obj.parentElement.remove();
+	}
+	// 按推荐排序	
+	function tui() {
+	    dle();
+		var newarr=haibao.sort(function (x,y) {
+			return (x.tu).localeCompare(y.tu)
+		});
+		console.log(newarr);
+		var imgtui="";
+		for (var i =0;newarr.length> i; i++) {
+			var imgL=document.getElementById('imgDiv');
+			// console.log(i);
+			var imgi=newarr[i].tu;
+			var text=newarr[i].zi;
+			// console.log(imgi);
+			imgtui+="<div class='pic'>"+"<img src='"+imgi+"'/>"+"<h6>"+text+"</h6>"+"<input type='button' value='删除' onclick='Dlet(this)' style='position:relative;top:-140px;left:150px;color:white;border:none;border-radius:4px;'>"+"</div>";
+			// console.log(imgtui);
+			imgL.innerHTML=imgtui;
+			// console.log(imgL.innerHTML);
+		}
+	}
+	// 按名字排序
+	function ci() {
+	    dle();
+		var newarr=haibao.sort(function (x,y) {
+			return (x.zi).localeCompare(y.zi)
+		});
+		console.log(newarr);
+		var imgtui="";
+		for (var i =0;newarr.length> i; i++) {
+			var imgL=document.getElementById('imgDiv');
+			// console.log(i);
+			var imgi=newarr[i].tu;
+			var text=newarr[i].zi;
+			// console.log(imgi);
+			imgtui+="<div class='pic'>"
+			+"<img src='"+imgi+"'/>"+"<h6>"+text+"</h6>"+"<input type='button' value='删除' onclick='Dlet(this)' style='position:relative;top:-140px;left:150px;color:white;border:none;border-radius:4px;'>"+"</div>";
+			// console.log(imgtui);
+			imgL.innerHTML=imgtui;
+			// console.log(imgL.innerHTML);
+		}
+	}
+</script>
+</html>

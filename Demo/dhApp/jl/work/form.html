@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style>
+        * {
+            color: lightgoldenrodyellow
+        }
+
+        .name {
+            border: none;
+            background-color: #999999;
+            height: 25px;
+            border-radius: 10px;
+            width: 80px;
+            text-align: center;
+        }
+
+        .name1 {
+            border: none;
+            background-color: #999999;
+            height: 25px;
+            border-radius: 10px;
+            width: 130px;
+            text-align: center;
+        }
+
+        body {
+            background-color: #888888
+        }
+
+        #main {
+            height: 700px;
+            width: 1000px;
+            background-color: #555555;
+            border-radius: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -350px;
+            margin-left: -500px;
+        }
+
+        #mainLeft {
+            height: 90%;
+            width: 57%;
+            /*background-color: beige;*/
+            float: left;
+            border-radius: 60px;
+            position: relative;
+            top: 5%;
+            left: 2%;
+        }
+
+        #mainRight {
+            height: 90%;
+            width: 36%;
+            background-color: #c0c0c0;
+            float: right;
+            position: relative;
+            top: 5%;
+            left: -2%;
+            border-radius: 60px;
+        }
+
+        .headerOne {
+            width: 98%;
+            height: 17%;
+            background-color: #c0c0c0;
+            border-left: 10px solid #222222;
+            border-top: 10px solid lightgoldenrodyellow;
+            border-bottom: 10px solid lightgoldenrodyellow;
+            border-right: 10px solid lightgoldenrodyellow;
+            border-radius: 30px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        section {
+            width: 100%;
+            height: 78%;
+            /*background-color:brown;*/
+            border-radius: 30px;
+            position: relative;
+            top: 5%;
+        }
+
+        #mainArtL {
+            width: 48%;
+            height: 100%;
+            background: #c0c0c0;
+            border-radius: 30px;
+            float: left;
+        }
+
+        #mainArtR {
+            width: 48%;
+            height: 100%;
+            /*background: beige;*/
+            border-radius: 30px;
+            float: right;
+        }
+
+        .acUp {
+            width: 100%;
+            height: 60%;
+            background-color: #c0c0c0;
+            border-radius: 30px;
+        }
+
+        .acDown {
+            width: 100%;
+            height: 20%;
+            /*background-color: #c0c0c0;*/
+            border-radius: 30px;
+            position: relative;
+            top: 5%;
+        }
+
+        #myName {
+            width: 95%;
+            height: 25%;
+            /*background-color: #b3d4fc;*/
+            border-radius: 5px;
+            position: relative;
+            left: 2.5%;
+            top: 5%;
+        }
+
+        #myL {
+            width: 60%;
+            height: 60%;
+            float: left;
+            position: relative;
+            top: 30%;
+            left: 10%;
+        }
+
+        #myR {
+            width: 35%;
+            height: 90%;
+            background-color: #555555;
+            border-radius: 30px;
+            float: right;
+            position: relative;
+            top: 10%;
+        }
+
+        .myId {
+            height: 60%;
+            width: 100%;
+            background-color: #222222;
+            position: relative;
+            top: 5%;
+        }
+
+        ul {
+            position: relative;
+            left: -4%;
+        }
+
+        li {
+            padding: 4%;
+            list-style: none;
+        }
+
+        .myId input {
+            border: none;
+            height: 25px;
+            width: 200px;
+            background-color: #888888;
+            border-radius: 5px;
+            position: absolute;
+            left: 35%;
+            text-align: center;
+        }
+
+        .myId textarea {
+            text-indent: 2em;
+            height: 100px;
+            width: 250px;
+            background-color: #888888;
+            border-radius: 10px;
+        }
+
+        .headerTwo {
+            height: 15%;
+            width: 100%;
+            line-height: 80px;
+            text-align: center;
+            position: relative;
+            top: -20px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            background-color: #222222;
+        }
+
+        .headerThree {
+            height: 25%;
+            width: 100%;
+            line-height: 80px;
+            text-align: center;
+            position: relative;
+            top: -20px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            background-color: #222;
+        }
+
+        .dayMoney textarea {
+            height: 130px;
+            width: 200px;
+            border-radius: 10px;
+            text-indent: 2em;
+            background-color: #999999;
+        }
+
+        .dayMoney {
+            position: relative;
+            top: -30px;
+        }
+
+        .pon {
+            position: relative
+        }
+
+        .pon input {
+            border: none;
+            height: 25px;
+            width: 150px;
+            background-color: #888888;
+            border-radius: 5px;
+            position: absolute;
+            left: 35%;
+            text-align: center;
+        }
+
+        .acDown input {
+            height: 30%;
+            width: 30%;
+            background-color: #000000;
+            border: 2px solid #c0c0c0;
+            border-radius: 10px;
+            position: relative;
+            top: 60px;
+            left: 20px;
+
+        }
+
+        .img1 {
+            position: relative;
+            top: -220px;
+            left: 220px;
+        }
+
+        .img2 {
+            height: 85px;
+            width: 120px;
+            position: relative;
+            top: -250px;
+            left: -250px;
+        }
+
+        .img3 {
+            height: 130px;
+            width: 130px;
+            position: relative;
+            top: -50px;
+            left: 130px;
+        }
+
+        h1 {
+            color: #222222;
+        }
+
+        .but {
+            height: 20%;
+            width: 100%;
+            background-color: #222222;
+            position: relative;
+            top: 115px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        #myR input {
+            opacity: 0;
+            position: relative;
+            top: -30px;
+            left: 28px;
+        }
+
+        span {
+            position: relative;
+            line-height: 35px;
+            left: 25px;
+        }
+    </style>
+</head>
+<body>
+<form id="main" action="" method="get">
+    <div id="mainLeft">
+        <header class="headerOne">
+            <h1>Cat 直投简历</h1>
+            <img class="img1" src="../img/cat1.png">
+            <img class="img2" src="../img/bigcat.png">
+        </header>
+        <section>
+            <article id="mainArtL">
+                <header class="headerTwo"><h2>从业经验</h2></header>
+                <div class="dayMoney">
+                    <ul>
+                        <li>
+                            <label>职场历时:</label><input type="range" min="0" max="60">
+                        </li>
+                        <li>
+                            <label>职场经验:</label>
+                            <br><br>
+                            <textarea></textarea>
+                        </li>
+                        <li>
+                            <label>职业意向:</label>
+                            <br><br>
+                            <textarea></textarea>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article id="mainArtR">
+                <div class="acUp">
+                    <div class="headerThree"><h2>联系方式</h2></div>
+                    <div class="pon">
+                        <li>
+                            <label>座机:</label><input type="tel">
+                        </li>
+                        <li>
+                            <label>电话:</label><input type="tel">
+                        </li>
+                        <li>
+                            <label>Q&nbsp;Q:</label><input type="number">
+                        </li>
+                        <li>
+                            <label>邮箱:</label><input type="email">
+                        </li>
+                        <li>
+                            <label>Address:</label><input type="text">
+                        </li>
+                    </div>
+                </div>
+                <div class="acDown">
+                    <div>
+                        <input type="submit">
+                        <br><br>
+                        <input type="reset" value="重置"></div>
+                    <img class="img3" src="../img/wicat.png">
+                </div>
+            </article>
+        </section>
+    </div>
+    <div id="mainRight">
+        <div id="myName">
+            <div id="myL">
+                <label>姓名:</label><input class="name" type="text" autofocus>
+                <br><br>
+                <label>性别:</label>
+                <input type="radio" name="sex">男
+                <input type="radio" name="sex">女
+                <br><br>
+                <label>生日:</label>
+                <input class="name1" type="date">
+            </div>
+            <div id="myR">
+                <div class="but"><span>上传头像</span><input type="file" accept="jpg/gif/png/jpeg"></div>
+            </div>
+        </div>
+        <div class="myId">
+            <ul>
+                <li>
+                    <label>学历:</label>
+                    <select>
+                        <option>小学</option>
+                        <option>初中</option>
+                        <option>高中</option>
+                        <option>大专</option>
+                        <option>本科</option>
+                        <option>硕博</option>
+                    </select>
+                </li>
+                <li>
+                    <label>专业:</label><input type="text">
+                </li>
+                <li>
+                    <label>籍贯:</label><input type="text">
+                </li>
+                <li>
+                    <label>身份证:</label><input type="number">
+                </li>
+
+
+                <li>
+                    <label>政治面貌:</label><input type="text">
+                </li>
+                <li>
+                    <label>个人简介:</label>
+                    <br><br><textarea></textarea>
+                </li>
+            </ul>
+        </div>
+    </div>
+</form>
+</body>
+</html>

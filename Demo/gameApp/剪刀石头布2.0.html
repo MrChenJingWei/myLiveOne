@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>剪刀石头布</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	#main{width:400px;height: auto;background-color: #FFFFE0;border-radius: 30px;margin: 50px auto;border-left:2px solid #FF7F50;border-right:2px solid #FF7F50;border-bottom:1px solid #FF7F50; }
+	.title{text-align: center;border: 3px solid #FF7F50;background-color: #FFF5EE;height: 50px;width: 200px;border-radius: 20px; position: relative;left:100px;top: -30px }	
+	h1{position: relative;top: -10px ;color: #FF7F50;}
+	#main div{text-align: center;margin-top: 30px}
+	#id{width: 500;background-color: #FFF5EE }
+	span{color:#FF7F50 }
+	h3{color: #F4A460}
+	</style>
+	<script type="text/javascript">
+	function start () {
+		
+		var gameResult=true;
+		var count=0;
+		var result;
+		var jilu="";
+		var input;
+		var di;
+		var divHtml="";
+		var ta=document.getElementById('da')
+		do
+		{   
+
+			count++;
+			divHtml+=jilu;
+			input=parseInt(prompt("你是要出剪刀(4)还是石头(7)那个布(10)呢0.0！！"));
+			di=Math.ceil(Math.random()*3);
+			result=input+di;
+
+		switch(result)
+			{
+				case 5:
+				case 9:
+				case 13:
+				 gameResult=false;
+				 alert("平局");
+				 jilu="<span>平局</span>";
+				 break;
+				case 8:
+				case 12:
+				case 7:
+				 alert("赢了");
+				 gameResult=true;
+				 jilu="<span>赢了</span>";
+				 break;
+				 case 11:
+				 case 6:
+				 case 10:
+				  alert("输了");
+				  gameResult=false;
+				  jilu="<span>输了</span>";
+				  break;
+			}
+		}
+		while(!gameResult)
+		out.value=count;
+		da.innerHTML=	divHtml;
+}
+
+	</script>
+</head>
+<body>
+    <div id="main">
+	    <div class="title"><h1>剪刀石头布</h1></div>
+	    <div><h3>这是一款变态版的剪刀石头布！！这是一个简单的剪刀石头布！！这是一个只有赢得剪刀石头布！！</h3></div>
+		<div>
+			<input type="button" value="游戏开始" onclick="start()" style="height:40px;width:65px;border:none;background:#FFE4B5;border:3px solid #FAEBD7;border-radius:10px;color:#D2691E">
+		</div>
+		<div>
+			<span>你一共花了<input type="text" id="out" style="height: 20px;width:30px;border-radius: 10px">次战胜了电脑！！！</span>
+			<div id="da"><h3>游戏胜负统计</h3></div>
+		</div>
+	</div>
+</body>
+</html>

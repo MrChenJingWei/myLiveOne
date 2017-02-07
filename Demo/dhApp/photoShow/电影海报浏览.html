@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>电影浏览海报</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	#main{
+		margin: 50px auto;
+		height: 700px;
+		width: 600px;
+		/*background-color: pink*/
+	}
+	#top{
+		height: 30px;
+		width: 600px;
+		color: blue;
+		margin-top: 70px
+
+	}
+	.leftU,.leftD{float: left;font-size: 10px;color: gray}
+	.rightU,.rightD{float: right;font-size: 10px}
+	#clear{clear: both;}
+	#top div{display: inline-block;}
+	.mid{position: relative;left: 130px;top: 10px}
+	a{text-decoration: none;}
+	#ye{height: 15px;width: 13px;/*background-color: pink*/;border:none;}
+
+	</style>
+	
+</head>
+<body>
+	<div id="main">
+		<h2>哆啦A梦：新·大雄的日本诞生 的剧照</h2>
+		<div id="top">
+			<div class="leftU">第<input type="text" value="2" id="ye">张/共15张</div>
+			<div id="clear"></div>
+			<div class="mid">
+				<div class="leftD">
+				<input type="button" name="" value="上一页" onclick="up()">
+				</div>
+				<div class="riaghtD">
+				<input type="button" name="" value="下一页" onclick="down()">
+				</div>
+			</div>
+			<div class="rightU"><a href="电影海报集合/电影海报集合.html" >浏览所有剧照</a></div>
+		</div>
+		<div id="clear"></div>
+		<hr>
+		<div id="imgDiv"><img src="2.jpg"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	"use strict";
+	// 严令模式
+	// 定义一个全局的图片数组
+	var haibao=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.jpg','15.jpg'];
+	//Window加载界面绑定函数事件 
+	window.onload=function () {
+		
+		var imgNUM=location.search.split("=")[1];
+		if (imgNUM==undefined) {
+			return;
+		}
+		var imgDiv=document.getElementById('imgDiv')
+		imgDiv.innerHTML="<img src='"+imgNUM+"'/>";
+		var no =getImgNo();
+		var numN= no.split(".")[0];
+			ye.value=numN;
+	}
+	// 获取当前图片的编号
+	function  getImgNo() {
+		var image=document.getElementsByTagName('img')[0];
+		return image.getAttribute("src");
+	}
+
+	// 上一页
+	function up() {
+		// hea获取当前图片编号
+		var no =getImgNo();
+		
+		// var numb=document.getElementById("ye")
+		// var num=no.substring(0,1);
+		// numb.innerHTML=num;
+		// 获取当前图片在数组的位置
+		var index=haibao.indexOf(no);
+		// 判断上一张图片索引有没超过数组
+		if (--index>=0) {
+			location.href="电影海报浏览.html?img="+haibao[index];
+
+		}else {
+			alert("这是第一张了！");
+		}
+		
+	}
+	function down() {
+		// hea获取当前图片编号
+		var no =getImgNo();
+		// var numb=document.getElementById("ye")
+		// var num=no.substring(0,1);
+		// numb.innerHTML=num;
+		// 获取当前图片在数组的位置
+		var index=haibao.indexOf(no);
+		// 判断上一张图片索引有没超过数组
+		if (++index<haibao.length) {
+			location.href="电影海报浏览.html?img="+haibao[index];
+		}else {
+			alert("这是最后一张了！");
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+</script>
+</html>

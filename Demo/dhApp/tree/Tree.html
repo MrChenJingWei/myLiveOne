@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: #e9e7ef;
+            z-index: -2;
+        }
+
+        #main {
+            position: relative;
+            height: 768px;
+            width: 1024px;
+            margin: 50px auto;
+            border: 10px solid #f0f0f4;
+        }
+
+        #pic {
+            position: absolute;
+            top: 200px;
+            left: 169px;
+            margin: 50px auto;
+            display: none;
+            z-index: 99;
+        }
+
+        #pic img {
+            height: 400px;
+            width: 600px;
+            border: 10px solid peachpuff;
+            border-radius: 10px;
+            z-index: 99;
+        }
+        .myheart{z-index: 99}
+        #textL {
+            position: absolute;
+            top: 400px;
+            left: 200px;
+            display: none;
+        }
+
+        #peoP {
+            position: absolute;
+            top: 630px;
+            left: 770px;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<div id="main">
+    <div id="peoP">
+        <svg width="250" height="160">
+            <!--女主-->
+            <!--女主飘带-->
+            <rect x="15" y="90" height="20" width="185" fill="red" fill-opacity="0.8"
+                  rx="6" ry="6">
+            </rect>
+            <!--女主主体-->
+            <rect x="110" y="50" rx="20" ry="20" width="80" height="80"
+                  fill="rgb(255,95,94)">
+            </rect>
+            <!--男主-->
+            <!--女主飘带-->
+            <rect x="80" y="100" height="20" width="30" fill="red" fill-opacity="0.8"
+                  rx="6" ry="6">
+            </rect>
+            <!--男主头饰-->
+            <rect x="50" y="20" rx="10" ry="10" width="40" height="40"
+                  fill="rgb(56,147,176)">
+            </rect>
+            <rect x="50" y="40" width="40" height="20"
+                  fill="gold">
+            </rect>
+            <!--男主主体-->
+            <rect x="30" y="50" rx="20" ry="20" width="80" height="80"
+                  fill="rgb(56,147,176)">
+            </rect>
+            <!--女主头饰-->
+            <circle cx="120" cy="60" fill="red" r="20">
+            </circle>
+            <circle cx="110" cy="60" fill="gold" r="15">
+            </circle>
+            <!--女主红晕-->
+            <rect x="105" y="100" height="10" width="25" fill="#c32136" fill-opacity="0.3"
+                  rx="6" ry="6">
+            </rect>
+            <rect x="170" y="100" height="10" width="25" fill="#c32136" fill-opacity="0.3"
+                  rx="6" ry="6">
+            </rect>
+            <!--女主飘带-->
+            <rect x="5" y="100" height="20" width="30" fill="red" fill-opacity="0.8"
+                  rx="6" ry="6">
+            </rect>
+            <rect x="185" y="100" height="20" width="30" fill="red" fill-opacity="0.8"
+                  rx="6" ry="6">
+            </rect>
+        </svg>
+    </div>
+    <audio id="musick" src="muc/薛之谦%20-%20绅士.mp3"></audio>
+    <div id="pic"><img src="pic/1.jpg"></div>
+    <div id="textL">
+        <svg width="768px" height="1024px">
+            <defs>
+
+            </defs>
+            <path stroke="#f0fcff" stroke-width="13" fill="#f47983" d="M 301.60827 54.5 C
+             301.60827 54.5 380.6521 -2.5
+                434.5851 33.5 C 488.5181 69.5 492.27358 128.5 473.69593 182.5 C
+                455.11829 236.5 369.07446 259.5 333.87471 292.5 C 298.67496 325.5
+                300.63051 320.5 301.11939 321 C 301.60827 321.5 312.36375 324.5
+                253.6975 284.5 C 195.03125 244.5 136.8315 210.5 125.23163 176.5
+                C 113.63176 142.5 106.67622 77.5 164.72036 36.5 C 222.7645 -4.5
+                301.60827 54.5 301.60827 54.5 z">
+            </path>
+            <text x="150" y="150" fill="pink" style="font-size: 30px">除了你，我谁都不想要。</text>
+        </svg>
+    </div>
+    <svg width="1024" height="768" style="background-color:#fffbf0">
+        <defs>
+            <!--爱心模板-->
+  <!--           <path id="heart" stroke="#f0fcff" stroke-width="13" fill="pink" d="M 301.60827 54.5 C
+             301.60827 54.5 380.6521 -2.5
+                434.5851 33.5 C 488.5181 69.5 492.27358 128.5 473.69593 182.5 C
+                455.11829 236.5 369.07446 259.5 333.87471 292.5 C 298.67496 325.5
+                300.63051 320.5 301.11939 321 C 301.60827 321.5 312.36375 324.5
+                253.6975 284.5 C 195.03125 244.5 136.8315 210.5 125.23163 176.5
+                C 113.63176 142.5 106.67622 77.5 164.72036 36.5 C 222.7645 -4.5
+                301.60827 54.5 301.60827 54.5 z"
+            ></path>
+            <path id='heartO' fill="pink" stroke="pink" fill-opacity="1" stroke-width="10" fill="red" d="M 301.60827 54.5 C
+             301.60827 54.5 380.6521 -2.5
+                434.5851 33.5 C 488.5181 69.5 492.27358 128.5 473.69593 182.5 C
+                455.11829 236.5 369.07446 259.5 333.87471 292.5 C 298.67496 325.5
+                300.63051 320.5 301.11939 321 C 301.60827 321.5 312.36375 324.5
+                253.6975 284.5 C 195.03125 244.5 136.8315 210.5 125.23163 176.5
+                C 113.63176 142.5 106.67622 77.5 164.72036 36.5 C 222.7645 -4.5
+                301.60827 54.5 301.60827 54.5 z"
+            > -->
+<!--                 <animate attributeName="stroke" values="pink ;#fffbf0; #f47983;pink" begin="0" fill="freeze"
+                         repeatCount="indefinite" dur="3s"></animate>
+            </path> -->
+            <text id="heart" style="fill: red;font-size: 100px;">最喜欢weina了</text>
+            <text id="heartO" style="fill: pink;font-size: 100px;">最喜欢weina了</text>
+        </defs>
+        <g id="heartGroup">
+            <path fill="#a1afc9" stroke="#e3f8fd" stroke-width="1" stroke-opacity="1" fill-opacity="1"
+                  d="M303.16666,756.66667C283.49999,744.33334 233.16666,703.66667 227.16666,556.66667C221.16666,409.66667 279.16666,463.66667 291.16666,433.66667C303.16666,403.66667 361.16666,380.66667 489.16666,398.66667C617.16666,416.66667 688.16666,403.66667 696.16666,402.66667C704.16666,401.66667 776.16666,398.66667 851.16666,338.66667C926.16666,278.66667 954.16666,173.66667 916.16666,115.66667C875.16666,65.66667 812.16666,62.66667 777.16666,65.66667C742.16666,68.66667 710.16666,85.66667 691.16666,106.66667C672.16666,127.66667 664.16666,162.66667 677.16666,193.66667C690.16666,224.66667 734.16666,231.66667 769.16666,217.66667C804.16666,203.66667 809.16666,179.66667 810.16666,168.66667C811.16666,157.66667 793.16666,180.66667 779.16666,190.66667C765.16666,200.66667 703.16666,216.66667 709.16666,159.66667C715.16666,102.66667 820.16666,83.66667 856.16666,116.66667C892.16666,149.66667 880.16666,235.66667 837.16666,280.66667C794.16666,325.66667 762.16666,345.66667 652.16666,352.66667C542.16666,359.66667 472.16666,323.66667 481.16666,277.66667C490.16666,231.66667 484.16666,64.66667 374.16666,42.66667C264.16666,20.66667 194.16666,124.66667 218.16666,183.66667C242.16666,242.66667 289.16666,250.66667 346.16666,239.66667C403.16666,228.66667 399.16666,190.66667 396.16666,177.66667C393.16666,164.66667 378.16666,127.66667 346.16666,136.66667C314.16666,145.66667 318.83334,166.33333 319,174C319.16666,181.66667 335.16666,160.66667 351.16666,163.66667C367.16666,166.66667 385.16666,211.66667 320.16666,215.66667C255.16666,219.66667 242.16666,175.66667 260.16666,141.66667C278.16666,107.66667 335.16666,102.66667 358.16666,107.66667C381.16666,112.66667 411.16666,123.66667 427.16666,168.66667C443.16666,213.66667 445.16666,256.66667 410.16666,309.66667C375.16666,362.66667 242.16666,321.66667 212.16666,320.66667C182.16666,319.66667 141.16666,341.66667 136.16666,350.66667C131.16666,359.66667 72.16666,333.66667 88.16666,380.66667C93.83333,416.33334 105.49999,461 105.16666,487.66667L112.16666,586.66667C108.16666,619.66667 100.16666,700.66667 78.16666,721.66667C56.16666,742.66667 4.16666,764.66667 5.16666,776.66667C139.49999,760.33334 434.83333,791 359.16666,767.66667z"
+                  id="svg_27" stroke-dasharray="none"></path>
+        </g>
+    </svg>
+    <!--男主-->
+
+</div>
+</body>
+<script>
+    var micS = ["muc/赵浴辰 - 可乐.mp3", 'muc/薛之谦 - 绅士.mp3', 'muc/陈势安 - 天后.mp3', 'muc/杨宗纬 - 空白格.mp3'];
+    var picP = ["pic/1.jpg", "pic/2.jpg", "pic/3.jpg"];
+    var heartCount = 10;
+    var hearts;
+    renderHeart();
+    function renderHeart() {
+        var heartRef = document.querySelector('#heart');
+        var heartGroup = document.querySelector('#heartGroup');
+        while (heartCount--) {
+            console.log("f");
+            heart = use(heartRef);
+            heart.setAttribute('transform', 'translate(' + random(0, 800)
+                + ',' + random(300, 0) + ')' + 'scale(' + random(0.3, 0.6) + ')');
+            heart.setAttribute('opacity', random(0.4, 0.8));
+            heart.setAttribute('class', "myheart");
+            heartGroup.appendChild(heart)
+        }
+        hearts = $(".myheart");
+    }
+    function use(origon) {
+        var SVG_NS = 'http://www.w3.org/2000/svg';
+        var XLINK_NS = 'http://www.w3.org/1999/xlink';
+        var _use = document.createElementNS(SVG_NS, 'use');
+        _use.setAttributeNS(XLINK_NS, 'xlink:href', '#' + origon.id);
+        return _use;
+    }
+
+
+    //随机淡入淡出
+    var showStar = setInterval(function () {
+//        console.log(hearts.length);
+//        console.log("rum");
+//        console.log( $(".myheart"));
+        for (var i = 0; i < hearts.length; i++) {
+            $(hearts[i]).fadeToggle(random(0, 3000));
+        }
+    }, 1000);
+
+    //大小数之间的随机
+    function random(min, max) {
+        return min + (max - min) * Math.random();
+    }
+    //    爱心的点击事件
+    var newThis = $('.myheart');
+    $('.myheart').on('click', function () {
+        var i = Math.ceil(Math.random() * 3);
+        var m = Math.ceil(Math.random() * 4);
+        var n = Math.ceil(Math.random() * 3);
+        console.log(this);
+        newThis.attr('xlink:href', '#heart');
+        if (newThis !== undefined) {
+            hearts.push(newThis[0]);
+        }
+        switch (i) {
+            case 1:
+                $('#musick').attr('src', micS[m]);
+                musick.play();
+                newThis = $(this);
+                hearts = hearts.not($(this));
+                $(this).fadeIn('fast');
+                $(this).attr('xlink:href', '#heartO');
+                $(this).attr('opacity', '1');
+                break;
+            case 2:
+                console.log('2');
+                $("#textL").hide('slow');
+                $("#pic").hide('slow');
+                $('#pic img').attr('src', picP[n]);
+                newThis = $(this);
+                hearts = hearts.not($(this));
+                console.log(hearts.length);
+                $(this).fadeIn('fast');
+                $(this).attr('xlink:href', '#heartO');
+                $(this).attr('opacity', '1');
+                $('#pic').fadeToggle('slow');
+                break;
+            case 3:
+//                $("#textL").hide('slow');
+                $("#pic").hide('slow');
+                console.log('3');
+                newThis = $(this);
+                console.log(hearts.length);
+                hearts = hearts.not($(this));
+                console.log(hearts.length);
+                $(this).show('fast');
+                $(this).attr('xlink:href', '#heartO');
+                $(this).attr('opacity', '1');
+                $("#textL").fadeToggle('slow');
+        }
+
+    });
+    $('#pic img').on('click', function () {
+        $('#pic img').fadeToggle('slow');
+    });
+    $('#pic img').on('hover', function () {
+        $('#pic img').attr('border', '10px solid #e29c45');
+    });
+    $('#textL').on('click', function () {
+        $('#textL').fadeToggle('slow');
+    });
+    $('#textL').on('hover', function () {
+        $('#textL').attr('border', '10px solid #e29c45');
+    });
+</script>
+</html>

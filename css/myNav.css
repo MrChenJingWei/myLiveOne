@@ -8,6 +8,14 @@ body, html {
     animation-fill-mode: forwards;
     font-family: "微软雅黑";
 }
+a{
+    text-decoration: none;
+    color: #081319;
+}
+
+a:hover{
+    text-shadow:1px 5px 10px #c7c7c7;
+}
 
 .myHeadPosition {
     position: absolute;
@@ -20,7 +28,7 @@ body, html {
     box-shadow: 0 0 10px gray;
     border-radius: 50%;
     /*background: black;*/
-    background-image: url("../img/two.jpg");
+    background-image: url("../img/meS.jpg");
     background-size: 100% 100%;
 }
 body {
@@ -125,7 +133,7 @@ span:hover {
     overflow: hidden;
 }
 
-img {
+.bgPot {
     width: 100%;
     min-width: 980px;
 }

@@ -1,0 +1,176 @@
+<html>
+<head>
+	<title>注册</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.fit{height: 40px;width: 60px;font-size: 6px;display: inline-block;color: #87CEFA}
+	.out input{height:30px;width: 200px;border: none;color: red;/*background-color: red*/}
+	.out{margin-top: 19px;position: relative;top: 11px;left: -85px}
+	#mainL{float: left;margin-top: 50px;margin-left: 15px;}
+	#mainR{float: left;margin-left:0px;position: relative;top: -30px ;margin-top: 50px}
+	#tab{height: auto;width: 600px;background-color: #87CEFA;margin-top: 50px;}
+	.button input{height:20px;width:40px;margin-top:30px;margin-left:60px;background-color:#87CEFA;border-radius:3px;border:1px solid #4682B4;color:white}
+	.clear{clear: both;}
+	#tab2 th{width:150px;height: 30px;color: white;border: 1px solid white }
+	#tab2 td{width:150px;height: 30px;color: white;border: 1px solid white }
+	#main{height: 1000px;width: 600px;margin: 0px auto;}
+	#input input{border-radius: 3px;height: 30px;width: 200px}
+	#input input:hover {background-color: #87CEFA}
+	.h1{border: none;border-radius: 10px;background-color: #4682B4;text-align: center;color: white;height: 40px;}
+	h1{position: relative;top: 3px}
+	.kuang div{display: inline-block;}
+	#yonghu2,#mima12,#mima22,#yanzheng3,#id2 div{color: red;font-size: 6px}
+	#jianjie2 div{color: orange;font-size: 6px}
+	</style>
+	<script type="text/javascript">
+
+		function tijiao(){
+			var result=true;
+			var get_yonghu1=document.getElementById('yonghu1').value;
+			var get_mima1=document.getElementById('mima1').value;
+			var get_mima2=document.getElementById('mima2').value;
+			var get_id1=document.getElementById('id1').value;
+			var get_jianjie1=document.getElementById('jianjie1').value;
+			var get_yanzheng1=document.getElementById('yanzheng1').value;
+			var yonghu2=document.getElementById('yonghu2');
+			if (get_yonghu1.length>14||get_yonghu1.length<4) {
+				result=false;
+				
+			    yonghu2.innerHTML="请输入4到14位的账号";
+			} else{result=true;yonghu2.innerHTML= "";}
+			var mima12=document.getElementById('mima12');
+			if (get_mima1.length>16||get_mima1.length<6) {
+				result=false;
+				
+			    mima12.innerHTML="请输入6到16位的密码";
+			}else{result=true;mima12.innerHTML=""}
+			var mima22=document.getElementById('mima22');
+			if (get_mima1!=get_mima2) {
+				result=false;
+				
+				mima22.innerHTML="两次密码不一致";
+			}else{result=true;mima22.innerHTML=""}
+			var id2=document.getElementById('id2');
+			if (get_id1.length!=18) {
+				result=false;
+				
+				id2.innerHTML="请输入正确的身份证";
+			}else{result=true;id2.innerHTML=""}
+			var jianjie2=document.getElementById('jianjie2');
+			if (get_jianjie1.indexOf("qy")>=0) {
+				
+				jianjie2.innerHTML="请注意有敏感词汇";
+			}else{jianjie2.innerHTML=""}
+			var jianjie2=document.getElementById('jianjie2');
+			if ((yanzheng.value!=get_yanzheng1)||(get_yanzheng1.length<=0)) {
+				result=false;
+				
+				yanzheng3.innerHTML="验证码错误"
+			}else{result=true;yanzheng3.innerHTML=""}
+			if (result==true) {
+				
+				mima12.value="";
+				mima22.value="";
+				id2.value="";
+				yonghu2.value="";
+				jianjie2.value="";
+				yanzheng.value="";
+				yanzheng1.value="";
+				yanzheng3.value="";
+				var birday=get_id1.substring(6,14);
+				var tr=document.createElement("tr");
+				var word="qy";
+				var jianjie3=get_jianjie1.replace("qy","敏感")
+
+				var trHtml="";
+				trHtml="<td>"+get_yonghu1+"</td>";
+				trHtml+="<td>"+birday+"</td>";
+				trHtml+="<td>"+get_id1+"</td>";
+				trHtml+="<td>"+jianjie3+"</td>";
+				tr.innerHTML=trHtml;
+				var tab=document.getElementById('tab2');
+				tab.appendChild(tr);	
+			}
+		}
+		function reset(){
+			yonghu1.value="";
+			mima1.value="";
+			mima2.value="";
+			id1.value="";
+			jianjie1.value="";
+			mima12.value="";
+			mima22.value="";
+			id2.value="";
+			yonghu2.value="";
+			jianjie2.value="";
+			yanzheng.value="";
+		}
+		function yan(){
+			var the_one=String(Math.ceil(Math.random()*9));
+			var the_two=String(Math.ceil(Math.random()*9));
+			var the_three=String(Math.ceil(Math.random()*9));
+			var the_four=String(Math.ceil(Math.random()*9));
+			yanzheng.value=the_one+the_two+the_three+the_four;
+		}
+	</script>
+</head>
+<body>
+	<div class="h1"><h1>什么鬼注册系统</h1></div>
+	<div id="main">
+		<div id="mainL">
+			<div id="input">
+				<div class="kuang">
+					<div class="fit">用户</div><input id="yonghu1" type="text" value=""><div id="yonghu2"></div>
+				</div >
+				<div class="clear"></div>
+				<div class="kuang">
+					<div class="fit">密码</div><input id="mima1" type="text" value=""><div id="mima12"></div>
+				</div>
+				<div class="clear"></div>
+				<div>
+					<div class="fit">重新确认</div><input id="mima2" type="text" value=""><div id="mima22"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="kuang">
+					<div class="fit">身份证</div><input id="id1" type="text" value=""><div id="id2"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="kuang">
+					<div class="fit">简介</div><input id="jianjie1" type="text" value=""><div id="jianjie2"></div>
+				</div>
+				<div>
+					<div class="fit">验证码</div><input id="yanzheng" type="text" value=""><input id="yan" type="button" value="获取验证码" style=" margin-left:10px;background-color:#87CEFA;border-radius:3px;border:1px solid #4682B4;width:80px;height:30px;font-size:10px;color:white" onclick="yan()">
+				</div>
+				<div class="kuang">
+					<div class="fit" style="font-size:10px;position:relative;top:10px">请输入验证码</div><input id="yanzheng1" type="text" value="">
+				</div>
+				
+			</div>
+			<div class="button">
+				<input id="zu" type="button" value="注册" onclick="tijiao()" >
+				<input id="re" type="button" value="重置" onclick="reset()">
+			</div>
+		</div>
+		<!-- <div id="mainR">
+			<div class="out">5</div>
+			<div class="out"><input type="text" id="mima12"></div>
+			<div class="out"><input type="text" id="mima22"></div>
+			<div class="out"><input type="text" id="id2"></div>
+			<div class="out"><input type="text" id="jianjie2"></div>
+			<br><br><br>
+			<div class="out"><input type="text" id="yanzheng3"></div>
+		</div> -->
+		<div class="clear"></div>
+		<div id="tab">
+			<table id="tab2">
+				<tr>
+					<th class="a1">账号</th>
+					<th class="a2">生日</th>
+					<th class="a2">身份证</th>
+					<th class="a2">简介</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>柱状饼图</title>
+    <style>
+        #newCanves {
+            margin: 200px auto;
+            height: 800px;
+            width: 800px
+        }
+    </style>
+</head>
+<body>
+<div id="newCanves">
+    <canvas id="firstCanvas" height="800px" width="800px" style="background-color: #cccccc">
+    </canvas>
+</div>
+</body>
+<script>
+
+    var cxtColor = ['red', 'blue', 'orange', 'yellow', 'pink'];
+    var cxtPer = [20, 15, 25, 10, 30];
+    var cxtNume = ['游泳', '羽毛球', '跳高', '乒乓球', '跑步'];
+    var i = 0;
+    var starpoint = 0;
+    var textY = 120;
+    var textX = 100;
+    var myFirstCanvas = document.getElementById('firstCanvas');
+    var cxt = myFirstCanvas.getContext('2d');
+    var a = true;
+    var b = 0;
+    function pie() {
+        cxt.beginPath();
+        cxt.moveTo(50, 450);
+        cxt.lineTo(50, 730);
+        cxt.stroke();
+        cxt.beginPath();
+        cxt.moveTo(45, 460);
+        cxt.lineTo(50, 450);
+        cxt.lineTo(55, 460);
+        cxt.stroke();
+        cxt.closePath();
+        cxt.beginPath();
+        cxt.moveTo(20, 700);
+        cxt.lineTo(700, 700);
+        cxt.stroke();
+        cxt.beginPath();
+        cxt.moveTo(695, 695);
+        cxt.lineTo(700, 700);
+        cxt.lineTo(695, 705);
+        cxt.stroke();
+        cxt.beginPath();
+        cxt.textBaseline = 'top';
+        cxt.textAlign = 'right';
+        cxt.fillStyle = "green";
+        cxt.font = '25px 楷体-简';
+        cxt.fillText('0', 45, 705);
+        cxt.closePath();
+        cxt.beginPath();
+        cxt.textBaseline = 'top';
+        cxt.fillStyle = "red";
+        cxt.textAlign = 'right';
+        cxt.font = '25px 楷体-简';
+        cxt.fillText('100', 45, 500);
+        cxt.closePath();
+        setInterval(function () {
+            if (i < cxtPer.length && a) {
+                console.log(cxtColor[i]);
+                cxt.fillStyle = cxtColor[i];
+                cxt.beginPath();
+                cxt.moveTo(200, 200);
+                cxt.arc(200, 200, 160, starpoint, starpoint + Math.PI * 2 * (cxtPer[i] / 100), false);
+                cxt.fill();
+                cxt.closePath();
+                cxt.beginPath();
+                cxt.textAlign = 'left';
+                cxt.textBaseline = 'top';
+                cxt.font = '25px 楷体-简';
+                cxt.fillText(cxtNume[i] + ' : ' + cxtPer[i] + '%', 500, textY);
+                cxt.closePath();
+                textY += 40;
+                starpoint += Math.PI * 2 * (cxtPer[i] / 100);
+                i++;
+            } else {
+                console.log('1');
+                a = false;
+                i = 0;
+                if (b < cxtPer.length) {
+                    cxt.fillStyle = cxtColor[b];
+                    cxt.beginPath();
+                    cxt.rect(textX, 700 - cxtPer[b], 50, cxtPer[b]);
+                    cxt.fill();
+                    cxt.closePath();
+                    textX += 100;
+                    b++;
+                }
+            }
+        }, 100);
+    }
+    pie();
+</script>
+</html>
