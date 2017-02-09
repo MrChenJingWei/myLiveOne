@@ -2,58 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="613e5002-01c1-45b1-99fc-800cebbf4081" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/btTime/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/btTime/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/btTime/dong.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/btTime/fen.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/qixi/范玮琪 - 一颗心的距离.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/btTime/变态计时器.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报浏览.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/photoShow/电影海报集合/电影海报集合.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/qixi/七夕.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/dhApp/柱状、饼图.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/gameApp/剪刀石头布2.0.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/syApp/体重.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/syApp/注册.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/myNav.css" afterPath="$PROJECT_DIR$/css/myNav.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/myNav/myNav.js" afterPath="$PROJECT_DIR$/js/myNav/myNav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scene/aboutMe.html" afterPath="$PROJECT_DIR$/scene/aboutMe.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scene/myNav.html" afterPath="$PROJECT_DIR$/scene/myNav.html" />
     </list>
     <ignored path="myLive.iws" />
@@ -75,30 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="aboutMe.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scene/aboutMe.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84494776">
-              <caret line="193" column="43" selection-start-line="193" selection-start-column="43" selection-end-line="193" selection-end-column="43" />
-              <folding>
-                <element signature="n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#hr#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myNav.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="myNav.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scene/myNav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.6944447">
-              <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.19354838">
+              <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
               <folding>
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
@@ -108,8 +42,8 @@
       <file leaf-file-name="myNav.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/myNav.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state vertical-scroll-proportion="17.333334">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -119,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/js/myNav/myNav.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="158" column="67" selection-start-line="158" selection-start-column="67" selection-end-line="158" selection-end-column="67" />
+              <caret line="160" column="42" selection-start-line="160" selection-start-column="28" selection-end-line="160" selection-end-column="42" />
               <folding>
                 <element signature="n#!!block;n#navShow#0" expanded="false" />
                 <element signature="n#!!block;n#knowShow#0" expanded="false" />
@@ -138,16 +72,6 @@
                 <marker date="1486478287892" expanded="true" signature="3929:4162" placeholder="..." />
                 <marker date="1486478287892" expanded="true" signature="3929:4184" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="变态计时器.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demo/dhApp/btTime/变态计时器.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.5">
-              <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -183,9 +107,9 @@
         <option value="$PROJECT_DIR$/Demo/dhApp/tree/Tree.html" />
         <option value="$PROJECT_DIR$/Demo/dhApp/btTime/变态计时器.html" />
         <option value="$PROJECT_DIR$/js/myNav/myNav.js" />
-        <option value="$PROJECT_DIR$/scene/myNav.html" />
-        <option value="$PROJECT_DIR$/css/myNav.css" />
         <option value="$PROJECT_DIR$/scene/aboutMe.html" />
+        <option value="$PROJECT_DIR$/css/myNav.css" />
+        <option value="$PROJECT_DIR$/scene/myNav.html" />
       </list>
     </option>
   </component>
@@ -195,9 +119,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="16" />
-    <option name="width" value="1384" />
-    <option name="height" value="748" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -254,20 +179,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scene" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myLive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myLive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -362,25 +273,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="0" width="1384" height="748" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24634503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24627976" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -499,15 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.7931035">
-          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -525,9 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.046551723">
           <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
-          <folding>
-            <element signature="e#1861#2022#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,7 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.75">
           <caret line="44" column="59" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -643,12 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.25">
           <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-          <folding>
-            <marker date="1486465724648" expanded="true" signature="2425:2507" placeholder="..." />
-            <marker date="1486465724648" expanded="true" signature="3559:3641" placeholder="..." />
-            <marker date="1486465724648" expanded="true" signature="4129:4333" placeholder="..." />
-            <marker date="1486465724648" expanded="false" signature="4241:4323" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,7 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.75">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -664,10 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.3211679">
           <caret line="143" column="23" selection-start-line="143" selection-start-column="23" selection-end-line="143" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#text#0;n#defs#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#text#1;n#defs#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -675,13 +562,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo/dhApp/btTime/变态计时器.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5">
+        <state vertical-scroll-proportion="0.0">
           <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
           <folding />
         </state>
@@ -706,24 +592,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3327869">
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scene/myNav.html">
+    <entry file="file://$PROJECT_DIR$/scene/aboutMe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6944447">
-          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="21" />
+        <state vertical-scroll-proportion="-13.638889">
+          <caret line="193" column="43" selection-start-line="193" selection-start-column="43" selection-end-line="193" selection-end-column="43" />
           <folding>
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#hr#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.7580645">
+          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/myNav.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state vertical-scroll-proportion="17.333334">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -731,7 +630,7 @@
     <entry file="file://$PROJECT_DIR$/js/myNav/myNav.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="158" column="67" selection-start-line="158" selection-start-column="67" selection-end-line="158" selection-end-column="67" />
+          <caret line="160" column="42" selection-start-line="160" selection-start-column="28" selection-end-line="160" selection-end-column="42" />
           <folding>
             <element signature="n#!!block;n#navShow#0" expanded="false" />
             <element signature="n#!!block;n#knowShow#0" expanded="false" />
@@ -753,18 +652,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scene/aboutMe.html">
+    <entry file="file://$PROJECT_DIR$/scene/myNav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84494776">
-          <caret line="193" column="43" selection-start-line="193" selection-start-column="43" selection-end-line="193" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.19354838">
+          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
           <folding>
-            <element signature="n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#hr#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
