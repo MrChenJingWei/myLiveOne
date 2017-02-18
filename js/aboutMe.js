@@ -32,3 +32,30 @@ $(".navAboutMeRight").click(function(e){
         default:
     }
 })
+
+$(".navAboutList").click(function(e){
+    var a = e.target.id;
+    switch (a){
+        case "home":
+            window.location = "../scene/myNav.html";
+            break;
+        default:
+            window.location = "err.html";
+            break;
+    };
+})
+var showBlock = true;
+
+$(".navAboutMeLeft").mouseenter(function(){
+    if (showBlock == true){
+        $(".navAboutList").css("display","inline-block");
+        $(".navAboutList").css("opacity","1");
+        showBlock = false;
+    }
+})
+$(".navAboutMeLeft").mouseleave(function(){
+    if (showBlock == false) {
+        $(".navAboutList").css("display", "none");
+        showBlock = true;
+    }
+})

@@ -2,36 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="陈进伟，个人网站，小潘的星空">
+    <meta name="description" content="关于陈进伟的个人网站">
     <title>小潘·关于我</title>
     <link rel="stylesheet" href="../css/aboutMe.css">
-    <style>
-        body{
-            font-family: 微软雅黑;
-        }
-        ul,div,table{
-            padding: 0;
-            margin: 0;
-        }
-        .allAboutMe{
-            min-width: 1000px;
-        }
-        .navAboutList{
-            display: none;
-            opacity: 1;
-            transition-property: opacity;
-            transition-duration: 3s ;
-            transition-delay: 1s;
-        }
-        .navAboutList li{
-            display: inline-block;
-            color: whitesmoke;
-            font-size: 15px;
-            margin-top: -10px;
-        }
-        .navAboutListMe{
-            display: inline-block;
-        }
-    </style>
 </head>
 <body>
 <div class="bgMyPhoto"></div>
@@ -170,33 +144,3 @@
 </html>
 <script src="../lib/jquery-3.1.1.js"></script>
 <script src="../js/aboutMe.js"></script>
-<script>
-    var showBlock = true;
-    $(".navAboutMeLeft").mouseenter(function(){
-        if (showBlock == true){
-            $(".navAboutList").css("display","inline-block");
-            $(".navAboutList").css("opacity","1");
-           showBlock = false;
-        }
-    })
-    $(".navAboutMeLeft").mouseleave(function(){
-        if (showBlock == false) {
-            $(".navAboutList").css("display", "none");
-            showBlock = true;
-        }
-    })
-</script>
-<script>
-    $(".navAboutList").click(function(e){
-        var a = e.target.id;
-        switch (a){
-            case "home":
-                window.location = "../scene/myNav.html";
-                break;
-            default:
-                window.location = "err.html";
-                break;
-        };
-    })
-
-</script>

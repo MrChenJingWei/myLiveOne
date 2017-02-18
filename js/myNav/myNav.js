@@ -53,6 +53,8 @@ $('.navHeadPosition').click(function(e){
     switch (a){
         case "me":window.location="aboutMe.html";
             break;
+        case "first":window.location="myNav.html";
+            break;
         default:
             window.location = "err.html";
             break;

@@ -218,3 +218,30 @@ position: relative;
     letter-spacing: 3px;
     line-height: 20px;
 }
+
+body{
+    font-family: 微软雅黑;
+}
+ul,div,table{
+    padding: 0;
+    margin: 0;
+}
+.allAboutMe{
+    min-width: 1000px;
+}
+.navAboutList{
+    display: none;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 3s ;
+    transition-delay: 1s;
+}
+.navAboutList li{
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 15px;
+    margin-top: -10px;
+}
+.navAboutListMe{
+    display: inline-block;
+}

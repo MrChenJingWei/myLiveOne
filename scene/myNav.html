@@ -2,154 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="陈进伟，个人网站，小潘的星空">
+    <meta name="description" content="关于陈进伟的个人网站">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>小潘</title>
     <link rel="stylesheet" href="../css/myNav.css" media="(min-width:376px)">
-    <style>
-        @media(max-width: 375px) {
-            body{
-                max-width:375px;
-            }
-            html,body,ul,span{
-                padding: 0;
-                margin: 0;
-                font-family: "微软雅黑";
-            }
-            .navHeadStyle  .en, .bgPhotoStyle, .aboutMeWorkStyle, .hrShowStyle {
-                display: none;
-            }
-
-            .navBarStyle {
-                width: 100%;
-                height: 3.2rem;
-                background: #f9f9f9;
-            }
-
-            .navBarPosition {
-                position: absolute;
-                margin: 0.2rem auto;
-            }
-
-            .HeadLeftPosition {
-                margin-left: 3%;
-            }
-
-            .myHeadStyle {
-                height: 2.6rem;
-                width: 2.6rem;
-                box-shadow: 0 0 0.1rem gray;
-                border-radius: 50%;
-                /*background: black;*/
-                background-image: url("../img/meS.jpg");
-                background-size: 100% 100%;
-            }
-
-            .myHeadPosition {
-                display: inline-block;
-            }
-
-            .myNameStyle {
-                font-size: 1rem;
-                color: gray;
-            }
-
-            .myNamePosition {
-                white-space: nowrap;
-                display: inline-block;
-                /*position: absolute;*/
-                /*top:50%;*/
-                transform: translate(2rem,-1rem);
-                z-index: 9999;
-            }
-/*===================================*/
-            .navHeadStyle{
-                width: 100%;
-                font-size: 0.9rem;
-                color: whitesmoke;
-                background: #6a6a6a;
-                overflow-y: auto;
-                box-shadow: 1px 2px 3px black;
-            }
-            .navHeadPosition {
-                /*background: black;*/
-                position: absolute;
-                white-space: nowrap;
-            }
-
-            .navHeadStyle li {
-                list-style: none;
-                display: inline-block;
-                padding: 0.2rem 0.4rem;
-            }
-            #firstNav {
-                color: #fff5df;
-            !important;
-                margin-left: 0.4rem;
-            }
-            .demoFaceStyle{
-                width: 80%;
-            }
-            .titleDemoShow{
-                display: inline-block;
-            }
-            #demoShow {
-                /*text-align: center;*/
-                width: 98%;
-                margin: 0 auto;
-                padding-top:7rem ;
-            }
-            #demoListShow{
-                width: 100%;
-            }
-            .demoNameListStyle{
-                width: 100%;
-                background: #f4f4f4;
-                margin: 0.2rem auto;
-                height: 4.5rem;
-            }
-            .demoFaceStyle{
-                display: block;
-                float: left;
-                height: 4.3rem;
-                width: 5rem;
-            }
-            .demoNameStyle{
-                display: block;
-                margin-top: 0.2rem;
-                margin-right: 0.2rem;
-                float: right;
-                text-align: center;
-                height: 2rem;
-                width: 60%;
-                text-decoration: none;
-                color: #454545;
-            }
-            .demoTitleStyle{
-                display: block;
-                text-align: center;
-                margin-right: 0.2rem;
-                margin-top: 0.2rem;
-                float: right;
-                height: 2rem;
-                width: 60%;
-                color: #a4a4a4;
-            }
-        }
-    </style>
 </head>
 <body>
 <!--头部导航栏-->
 <div class="navBarStyle navBarPosition">
     <div class="HeadLeftPosition">
         <div class="myHeadStyle myHeadPosition"></div>
-        <!--<div class="topLineStyle topLinePosition"></div>-->
         <div class="myNameStyle myNamePosition">
             Mr.Chen's Room
         </div>
     </div>
     <div class="navHeadStyle navHeadPosition">
         <ul>
-            <li id="firstNav"><span>首页</span><span class="en">Home</span></li>
+            <li id="firstNav"><span id="first">首页</span><span class="en">Home</span></li>
             <li><span id="me">关于我</span><span class="en">Me</span></li>
             <li><span id="poem">那些诗</span><span class="en">Poem</span></li>
             <li><span id="person">那些人</span><span class="en">Person</span></li>
@@ -161,7 +31,7 @@
 <!--头部背景展示-->
 <div class="bgPhotoStyle">
     <!--背景图片-->
-    <img class="bgPot" src="../img/photo.jpg" alt="">
+    <img class="bgPot" src="../img/photo.jpg" alt="小潘的星空">
     <!--文字-->
     <div class="showWorldStyle showWorldPosition">
         <input id="showKnown" type="button" value="真理惟一可靠的标准就是永远自相符合。 —— 欧文"   disabled="disabled"></div>
